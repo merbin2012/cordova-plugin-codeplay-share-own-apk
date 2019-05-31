@@ -1,0 +1,29 @@
+{
+  "name": "cordova-plugin-codeplay-share-own-apk",
+  "version": "0.0.1",
+  "description": "Developed by HTML Code Play and this plugin is used for share your current own apk through any other sharing applications.",
+  "cordova": {
+    "id": "cordova-plugin-codeplay-share-own-apk",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merbin2012/cordova-plugin-codeplay-share-own-apk.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+	"share-apk",
+	"share-own-apk",
+	"share-cordova-app",
+	"share-cordova-app-apk"
+  ],
+  "author": "Merbin Joe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/merbin2012/cordova-plugin-codeplay-share-own-apk/issues"
+  },
+  "homepage": "https://github.com/merbin2012/cordova-plugin-codeplay-share-own-apk#readme"
+}

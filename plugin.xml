@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-codeplay-share-own-apk" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>codeplay_shareapk</name>
+  <js-module name="codeplay_shareapk" src="www/codeplay_shareapk.js">
+    <clobbers target="cordova.plugins.codeplay_shareapk" />
+  </js-module>
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="codeplay_shareapk">
+        <param name="android-package" value="cordova.plugin.codeplay.share.own.apk.codeplay_shareapk" />
+      </feature>
+    </config-file>
+    <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+    <source-file src="src/android/codeplay_shareapk.java" target-dir="src/cordova/plugin/codeplay/share/own/apk/codeplay_shareapk" />
+  </platform>
+</plugin>
