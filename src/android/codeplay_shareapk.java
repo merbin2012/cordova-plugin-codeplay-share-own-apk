@@ -31,18 +31,20 @@ public class codeplay_shareapk extends CordovaPlugin {
 
         if (action.equals("openShare")) {
 
-            String message = args.getString(0);
+            String title = args.getString(0);
+            String apkName = args.getString(1);
 
             String str;
-            if(message!="" && message!="null")
+            if(title!="" && title!="null")
             {
-                str=message;
+                str=title;
             }
             else
             {
                 str=defaultShareTitle;
             }
-            shareApplication(str);
+
+            shareApplication(str,apkName);
 
 
             //this.coolMethod(message, callbackContext);
@@ -59,7 +61,7 @@ public class codeplay_shareapk extends CordovaPlugin {
         }
     }
 
-    public void shareApplication(String title) {
+    public void shareApplication(String title,String apkName) {
 
         Context testParameter = (cordova.getActivity()).getBaseContext();
         ApplicationInfo app = testParameter.getApplicationContext().getApplicationInfo();
@@ -82,8 +84,19 @@ public class codeplay_shareapk extends CordovaPlugin {
             if (!tempFile.isDirectory())
                 if (!tempFile.mkdirs())
                     return;
+
             //Get application's name and convert to lowercase
-            tempFile = new File(tempFile.getPath() + "/" + testParameter.getString(app.labelRes).replace(" ","").toLowerCase() + ".apk");
+            String tempAppname="";
+            if(apkName=="" || apkName=="null")
+            {
+                tempAppname=testParameter.getString(app.labelRes).replace(" ","").toLowerCase();
+            }
+            else
+            {
+                tempAppname=apkName;
+            }
+
+            tempFile = new File(tempFile.getPath() + "/" + tempAppname + ".apk");
             //If file doesn't exists create new
             if (!tempFile.exists()) {
                 if (!tempFile.createNewFile()) {

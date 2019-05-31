@@ -15,10 +15,10 @@
   "keywords": [
     "ecosystem:cordova",
     "cordova-android",
-	"share-apk",
-	"share-own-apk",
-	"share-cordova-app",
-	"share-cordova-app-apk"
+    "share-apk",
+    "share-own-apk",
+    "share-cordova-app",
+    "share-cordova-app-apk"
   ],
   "author": "Merbin Joe",
   "license": "ISC",
