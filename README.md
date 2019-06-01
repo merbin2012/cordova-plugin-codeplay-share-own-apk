@@ -8,30 +8,42 @@ https://github.com/merbin2012/cordova-plugin-codeplay-share-own-apk
 
 <h2>How to Instalation?</h2>
 <h4>Using the Cordova CLI</h4>
+<blockquote>
   $ cordova plugin add cordova-plugin-codeplay-share-own-apk
-
+</blockquote>
 
 
 <h4>Using the phonegap CLI</h4>
+<blockquote>
   $ phonegap local plugin add cordova-plugin-codeplay-share-own-apk
-
+</blockquote>
 
 <h2>How to Uninstall?</h2>
 <h4>Using the Cordova CLI</h4>
+<blockquote>
   $ cordova plugin rm cordova-plugin-codeplay-share-own-apk
+</blockquote>
 
 <h4>Using the phonegap CLI</h4>
+<blockquote>
   $ phonegap local plugin rm cordova-plugin-codeplay-share-own-apk
-
+</blockquote>
 
 <h2>Methods 1</h2>
 <h3>Give your own title</h3>
 <h4>Syntax</h4>
-<p>cordova.plugins.codeplay_shareapk.openShare(["Title"]);</p>
 
+```javascript
+cordova.plugins.codeplay_shareapk.openShare(["Title"]);
+```
 
 <h4>Example</h4>
-  cordova.plugins.codeplay_shareapk.openShare("Kindly share our app through");
+
+```javascript
+cordova.plugins.codeplay_shareapk.openShare("Kindly share our app through");
+```
+
+  
 
 <h4>Screenshot</h4>
 <p  align="center">
@@ -41,7 +53,10 @@ https://github.com/merbin2012/cordova-plugin-codeplay-share-own-apk
 
 <h3>Give default title</h3>
 <h4>Syntax</h4>
-<p>cordova.plugins.codeplay_shareapk.openShare();</p>
+
+```javascript
+cordova.plugins.codeplay_shareapk.openShare();
+```
   
 <h4>Screenshot</h4>
 <p  align="center">
@@ -53,10 +68,16 @@ https://github.com/merbin2012/cordova-plugin-codeplay-share-own-apk
 <h2>Methods 2</h2>
 <h3>Custom share apk file name</h3>
 <h4>Syntax</h4>
-<p>cordova.plugins.codeplay_shareapk.openShare(["Title"][,"Apk Name"]);</p>
+
+```javascript
+cordova.plugins.codeplay_shareapk.openShare(["Title"][,"Apk Name"]);
+```
 
 <h4>Example</h4>
-<p>cordova.plugins.codeplay_shareapk.openShare("Title","My new Apk Name");</p>
+
+```javascript
+cordova.plugins.codeplay_shareapk.openShare("Title","My new Apk Name");
+```
 
 <h4>Screenshot</h4>
 <p  align="center">
