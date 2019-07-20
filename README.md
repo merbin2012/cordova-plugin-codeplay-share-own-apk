@@ -29,7 +29,35 @@ https://github.com/merbin2012/cordova-plugin-codeplay-share-own-apk
   $ phonegap local plugin rm cordova-plugin-codeplay-share-own-apk
 </blockquote>
 
+
+
 <h2>Methods 1</h2>
+<h3>Check is support or not</h3>
+You must check is this support or not then enable the share button, some Android version doesn't support eg) Android 4.4, Android 5.0
+<h4>Syntax</h4>
+
+```javascript
+cordova.plugins.codeplay_shareapk.isSupport(success,fail);
+```
+
+<h4>Example</h4>
+
+```javascript
+cordova.plugins.codeplay_shareapk.isSupport(success,fail);
+
+function success(result)
+{
+ console.log(result);
+}
+function fail(result)
+{
+ console.log(result);
+}
+```
+
+
+
+<h2>Methods 2</h2>
 <h3>Give your own title</h3>
 <h4>Syntax</h4>
 
@@ -65,7 +93,7 @@ cordova.plugins.codeplay_shareapk.openShare();
 
 
 
-<h2>Methods 2</h2>
+<h2>Methods 3</h2>
 <h3>Custom share apk file name</h3>
 <h4>Syntax</h4>
 
@@ -83,6 +111,43 @@ cordova.plugins.codeplay_shareapk.openShare("Title","My new Apk Name");
 <p  align="center">
   <img src="https://3.bp.blogspot.com/-CN_dIvHzPw8/XPEtGzK4NmI/AAAAAAAAPbU/yUFrg_N9-5MXWASzEO5PUUtpoGAfo7k-wCLcBGAs/s1600/Screenshot_2019-05-31-18-38-15-834_com.whatsapp.png" width="350" alt="Change share apk name">
 </p>
+
+
+
+
+<h2>Methods 4</h2>
+<h3>Share any file</h3>
+<h4>Syntax</h4>
+
+
+
+```javascript
+cordova.plugins.codeplay_shareapk.openShareFile("Title","New_Filename_with_externsion","file_path");
+```
+
+<h4>Example</h4>
+
+```javascript
+cordova.plugins.codeplay_shareapk.openShareFile("This is title","mytable.html","/storage/emulated/0/HTMLCodePlayTemp.html")
+```
+
+<h4>Screenshot</h4>
+<p  align="center">
+  <img src="https://1.bp.blogspot.com/-Xslb5cxlSc0/XTMfYOjraHI/AAAAAAAAPqE/YdIAz5gZzB0YhVl-M9kbE239CRgnN7dtwCLcBGAs/s1600/Screenshot_2019-07-20-19-26-58-447_android.png" width="350" alt="Share file popup">
+  <img src="https://3.bp.blogspot.com/-1hYhRrSC7EE/XTMfXjHPbKI/AAAAAAAAPqA/QlsWBSRKsPk1_jhoF_Ip37IpLINDqjXiQCLcBGAs/s1600/Screenshot_2019-07-20-19-27-21-868_com.whatsapp.png" width="350" alt="Share in whatsapp">
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
