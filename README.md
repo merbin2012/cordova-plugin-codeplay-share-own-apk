@@ -145,6 +145,31 @@ cordova.plugins.codeplay_shareapk.openShareFile("This is title","mytable.html","
 
 
 
+<h2>Methods 5</h2>
+<h3>Copy given file to specified directory</h3>
+Copy the given source file to the given destination directory.
+<h4>Syntax</h4>
+
+
+
+```javascript
+cordova.plugins.codeplay_shareapk.copyFile(sourceFilePath,distinationFolderPath,FileNameWithExternsion);
+```
+
+<h4>Example</h4>
+
+```javascript
+var sourcePath='/storage/emulated/0/test.jpg';
+var distinationPath="/storage/emulated/0/Android/data/com.xxx.xxx/files/";
+
+cordova.plugins.codeplay_shareapk.copyFile(sourcePath,distinationPath,"myfile.jpg");
+```
+
+
+
+
+
+
 
 
 
