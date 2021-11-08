@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-codeplay-share-own-apk",
-  "version": "0.0.1",
+  "version": "0.0.9",
   "description": "Developed by HTML Code Play and this plugin is used for share your current own apk through any other sharing applications.",
   "cordova": {
     "id": "cordova-plugin-codeplay-share-own-apk",
